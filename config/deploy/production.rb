@@ -11,6 +11,8 @@ server "45.77.47.233", user: "deploy", roles: %w{app db web}
 
 set :branch, 'develop'
 
+set :deploy_to, "/var/www/linechatgpt_production"
+
 # role-based syntax
 # ==================
 

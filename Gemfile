@@ -65,6 +65,7 @@ group :development do
 
   gem "capistrano", "~> 3.17"
   gem "capistrano-rails", "~> 1.6"
+  gem "capistrano-passenger", "~> 0.2.1"
 end
 
 group :test do
@@ -76,3 +77,4 @@ end
 gem "ed25519", "~> 1.3"
 
 gem "bcrypt_pbkdf", "~> 1.1"
+
