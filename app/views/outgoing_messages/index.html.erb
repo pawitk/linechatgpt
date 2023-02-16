@@ -1,0 +1,14 @@
+<p style="color: green"><%= notice %></p>
+
+<h1>Outgoing messages</h1>
+
+<div id="outgoing_messages">
+  <% @outgoing_messages.each do |outgoing_message| %>
+    <%= render outgoing_message %>
+    <p>
+      <%= link_to "Show this outgoing message", outgoing_message %>
+    </p>
+  <% end %>
+</div>
+
+<%= link_to "New outgoing message", new_outgoing_message_path %>
