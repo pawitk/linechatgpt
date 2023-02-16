@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :incoming_messages
   post 'webhook/line'
   get 'home/index'
   root "home#index"

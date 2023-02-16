@@ -1,0 +1,10 @@
+<p style="color: green"><%= notice %></p>
+
+<%= render @incoming_message %>
+
+<div>
+  <%= link_to "Edit this incoming message", edit_incoming_message_path(@incoming_message) %> |
+  <%= link_to "Back to incoming messages", incoming_messages_path %>
+
+  <%= button_to "Destroy this incoming message", @incoming_message, method: :delete %>
+</div>

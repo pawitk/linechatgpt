@@ -1,0 +1,10 @@
+<h1>Editing incoming message</h1>
+
+<%= render "form", incoming_message: @incoming_message %>
+
+<br>
+
+<div>
+  <%= link_to "Show this incoming message", @incoming_message %> |
+  <%= link_to "Back to incoming messages", incoming_messages_path %>
+</div>
