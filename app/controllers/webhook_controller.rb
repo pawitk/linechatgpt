@@ -27,7 +27,7 @@ class WebhookController < ApplicationController
           }
       ]
     }
-    RestClient.post('https://api.line.me/v2/bot/message/reply',@reply_body.to_json,,:content_type => 'application/json', :authorization => "Bearer #{Rails.application.credentials.line_channel_access_token}")
+    RestClient.post('https://api.line.me/v2/bot/message/reply',@reply_body.to_json,:content_type => 'application/json', :authorization => "Bearer #{Rails.application.credentials.line_channel_access_token}")
 
     render json: true
   end
